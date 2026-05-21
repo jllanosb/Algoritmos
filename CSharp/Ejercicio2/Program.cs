@@ -41,10 +41,22 @@ namespace Ejercicio2
             Console.WriteLine("Ingrese nota 4: ");
             nota4=int.Parse(Console.ReadLine());
 
+            //Proceso
+            promedio = (nota1 + nota2 + nota3 + nota4) / 4;
 
+            //Decision
+            if (promedio >= 12)
+            {
+                Console.WriteLine($"Promedio: {promedio}");
+                Console.WriteLine("Estudiante APROBADO");
+            }
+            else {
+                Console.WriteLine($"Promedio: {promedio}");
+                Console.WriteLine("Estudiante DESAPROBADO");
+            }
 
-
-
+            //Detener
+            Console.ReadKey();
         }
     }
 }
