@@ -28,15 +28,21 @@ namespace Ejercicio1
             //Decision
             /* Si -->if edad >= 18 Entonces {
              *      Mostrar "Mayor de Edad"
-             * sino
+             *   }
+             * sino else {
              *      Mostrar "Menor de Edad"
-             * finsi }
+             *      }
+             * finsi 
              */
-            if (edad >= 18)
-            {
+            if (edad >= 18) {
                 Console.WriteLine("Eres Mayor de Edad");
             }
+            else {
+                Console.WriteLine("Eres Menor de Edad");
+            }
 
+            //Detener pantalla
+            Console.ReadKey();
         }
     }
 }
