@@ -1,3 +1,6 @@
+from datetime import datetime
+print(f'Fecha y Hora: {datetime.now()}')
+
 # Definir variables
 precio=0.50
 pago = 0

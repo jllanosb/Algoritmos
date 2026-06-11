@@ -1,4 +1,6 @@
 import random
+from datetime import datetime
+print(f'Fecha y Hora: {datetime.now()}')
 
 n1=random.randint(5,9)
 print(f'Numero 1: {n1}')

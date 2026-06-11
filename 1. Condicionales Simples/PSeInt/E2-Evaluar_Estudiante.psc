@@ -6,7 +6,7 @@ Algoritmo Evaluar_Estudiante
 	Si prom_ponderado>=12 Entonces	
 		Escribir "Estudiante Aprobado";
 	Fin si
-	Si prom_ponderad=11 Entonces	
+	Si prom_ponderado=11 Entonces	
 		Escribir "Apto para el Sustitutorio";
 	Fin si
 	Si prom_ponderado<10 Entonces	
