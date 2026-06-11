@@ -1,5 +1,4 @@
 # Definir variables
-
 precio=0.50
 pago = 0
 # Entrada datos
