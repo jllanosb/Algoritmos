@@ -71,7 +71,7 @@ namespace Algoritmos_con_Metodos
             Random genera = new Random();
             Console.WriteLine("Clasificacion de Estudiantes");
             calificacion = genera.Next(0,120); //obteniendo el numero aleatorio 0 y 120
-            Console.WriteLine($"Califacion obtenida: {calificacion} puntos");
+            Console.WriteLine($"Calificacion obtenida: {calificacion} puntos");
             //Condicional anidado
             if (calificacion >= 90) {
                 Console.WriteLine("Clasifica estudiante como Excelente");
@@ -89,8 +89,30 @@ namespace Algoritmos_con_Metodos
                 Console.WriteLine("Clasifica estudiante como Insuficiente");
             }
         }
-        static void TipoViaje() { 
-            
+        //Metodo para el caso 3
+        static void TipoViaje() {
+            int dias;
+            double presupuesto;
+            Console.WriteLine("Tipo de Viaje");
+            Console.WriteLine("Ingrese los dias de viaje");
+            dias = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el presupuesto disponible (s/.)");
+            presupuesto = double.Parse(Console.ReadLine());
+            //condicional anidado
+            if (dias < 3 && presupuesto < 500) {
+                Console.WriteLine("Tipo de Viaje: Escapadita de Fin de Semana");
+            }
+            else if (dias > 15 && presupuesto > 5000) {
+                Console.WriteLine("Tipo de Viaje: Internacional de Lujo");
+            }
+            else if ((dias > 7 && dias < 15) && (presupuesto > 2000 && presupuesto < 5000)) {
+                Console.WriteLine("Tipo de Viaje: Internacional");
+            } else if ((dias < 7 && presupuesto < 2000){
+                Console.WriteLine("Tipo de Viaje: Nacional");
+            }
+            else {
+                Console.WriteLine("Tipo de Viaje No Clasificado !!!");
+            }
         }
         static void ClasificarProductos()
         {
