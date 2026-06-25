@@ -64,8 +64,30 @@ namespace Algoritmos_con_Metodos
             Console.WriteLine($"El descuento obtenido es s/. {descuento} ");
             Console.WriteLine($"Monto a pagar es s/. {monto - descuento}");
         }
-        static void ClasificarEstudiantes() { 
-        
+        //Metodo para el Caso 2
+        static void ClasificarEstudiantes() {
+            //Usar metodo para generar numeros aleatorios RANDOM
+            double calificacion;
+            Random genera = new Random();
+            Console.WriteLine("Clasificacion de Estudiantes");
+            calificacion = genera.Next(0,120); //obteniendo el numero aleatorio 0 y 120
+            Console.WriteLine($"Califacion obtenida: {calificacion} puntos");
+            //Condicional anidado
+            if (calificacion >= 90) {
+                Console.WriteLine("Clasifica estudiante como Excelente");
+            }
+            else if (calificacion >= 80 && calificacion < 90) {
+                Console.WriteLine("Clasifica estudiante como Muy bueno");
+            }
+            else if (calificacion >= 70 && calificacion < 80) {
+                Console.WriteLine("Clasifica estudiante como Bueno");
+            }
+            else if (calificacion >= 60 && calificacion < 70) {
+                Console.WriteLine("Clasifica estudiante como Suficiente");
+            }
+            else {
+                Console.WriteLine("Clasifica estudiante como Insuficiente");
+            }
         }
         static void TipoViaje() { 
             
